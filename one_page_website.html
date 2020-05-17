@@ -3,109 +3,122 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Indy Car Racing | Formula 1</title>
-		<link rel="stylesheet" href="./CSS/one_page_website.css">
-	</head>
-	<body>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./CSS/one_page_website.css">
+    </head>
+    
+    <body>
 		
 		<!-- NAV -->
-			<div>
-				<div>
-					<ul>
-						<a href="#Home" id="link"><li>Home</li></a>
-						<a href="#Schedule" id="link"><li>Schedule</li></a>
-						<a href="#News" id="link"><li>News</li></a>
-						<a href="#Cars" id="link"><li>Cars</li></a>
-						<a href="#Crash" id="link"><li>Crash</li></a>
-					</ul>
-				</div>
-			</div>
-		<!-- END NAV -->
-		
-		<!-- HOME -->
-			<div id="Home">
-				<div>
-					<div>
-						<span><h1>Formula 1 Racing</h1></span>
-					</div>
-				</div>
-			</div>
-		<!-- END HOME -->
-		
-		<!-- GALLERY -->
-		<section>
-			<div id="Cars">
-				<h1>Cars</h1>
-				<div>
-			
-				<!-- PHOTO CONTAINER 1 -->
-				<div>
-					<div>
-						<img src="./Images/Thumbnails/Thumbnail_1.png" alt="Race Leader">
-						<div>
-							<h3>Click to Enlarge</h3>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 1 -->
-				
-				<!-- PHOTO CONTAINER 2 -->
-				<div>
-					<div>
-						<img src="./Images/Thumbnails/Thumbnail_2.png" alt="Final Lap">
-						<div>
-							<h3>Click to Enlarge</h3>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 2 -->
-				
-				<!-- PHOTO CONTAINER 3 -->
-				<div>
-					<div>
-						<img src="./Images/Thumbnails/Thumbnail_3.png" alt="On the Last Stretch">
-						<div>
-							<h3>Click to Enlarge</h3>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 3 -->
-				
-				<!-- PHOTO CONTAINER 4 -->
-				<div>
-					<div>
-						<img src="./Images/Thumbnails/Thumbnail_4.png" alt="Final Curve">
-						<div>
-							<h3>Click to Enlarge</h3>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 4 -->
-				
-				<!-- PHOTO CONTAINER 5 -->
-				<div>
-					<div>
-						<img src="./Images/Thumbnails/Thumbnail_5.png" alt="Close-up">
-						<div>
-							<h3>Click to Enlarge</h3>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 5 -->
-				
-				<!-- PHOTO CONTAINER 6 -->
-				<div>
-					<div>
-						<img src="./Images/Thumbnails/Thumbnail_6.png" alt="On Fire">
-						<div>
-							<h3>Click to Enlarge</h3>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO CONTAINER 6 -->
-			</div>
-		</section>
-		<!-- END GALLERY -->
-		
+        <div>
+            <div>
+                <ul>
+                    <a href="#Home" id="link"><li>Home</li></a>
+                    <a href="#Schedule" id="link"><li>Schedule</li></a>
+                    <a href="#News" id="link"><li>News</li></a>
+                    <a href="#Cars" id="link"><li>Cars</li></a>
+                    <a href="#Crash" id="link"><li>Crash</li></a>
+                </ul>
+            </div>
+        </div>
+    <!-- END NAV -->
+    
+    <!-- HOME -->
+        <div id="Home">
+            <div>
+                <div>
+                    <span><h1>Formula 1 Racing</h1></span>
+                </div>
+            </div>
+        </div>
+    <!-- END HOME -->
+
+    <h1 id="Cars" style="text-align:center">Cars</h1>
+
+    <div class="row">
+        <div class="column">
+            <img src="./Images/Thumbnails/Thumbnail_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./Images/Thumbnails/Thumbnail_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./Images/Thumbnails/Thumbnail_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./Images/Thumbnails/Thumbnail_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./Images/Thumbnails/Thumbnail_5.png" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="./Images/Thumbnails/Thumbnail_6.png" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+        </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+    
+        <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="./Images/Thumbnails/Thumbnail_1.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="./Images/Thumbnails/Thumbnail_2.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="./Images/Thumbnails/Thumbnail_3.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="./Images/Thumbnails/Thumbnail_4.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="./Images/Thumbnails/Thumbnail_5.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="./Images/Thumbnails/Thumbnail_6.png" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+    
+    
+        <div class="column">
+            <img class="demo cursor" src="./Images/Thumbnails/Thumbnail_1.png" style="width:100%" onclick="currentSlide(1)" alt="Last lap">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./Images/Thumbnails/Thumbnail_2.png" style="width:100%" onclick="currentSlide(2)" alt="Ahead once again">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./Images/Thumbnails/Thumbnail_3.png" style="width:100%" onclick="currentSlide(3)" alt="Winner lap">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./Images/Thumbnails/Thumbnail_4.png" style="width:100%" onclick="currentSlide(4)" alt="In the pit">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./Images/Thumbnails/Thumbnail_5.png" style="width:100%" onclick="currentSlide(5)" alt="Last turn">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="./Images/Thumbnails/Thumbnail_6.png" style="width:100%" onclick="currentSlide(6)" alt="On FIRE!">
+        </div>
+        </div>
+    </div>
+
 		<!-- Schedule -->
 		<section>
 			<div id="Schedule">
@@ -172,8 +185,8 @@
 				</table>
 			</div>
 		</section>
-		<!-- END Schedule -->
-		
+        <!-- END Schedule -->
+        
 		<!-- News -->
 		<section>
 			<div id="News">
@@ -186,14 +199,14 @@ F1 REWIND: Watch our full-race stream as Ricciardo charges to victory in the 201
 Ricciardo took seven Grands Prix wins for Red Bull between 2014 and 2018 – with 30 podium finishes and three pole positions – before his big-money move to Renault in 2019.
 F1 Grand Prix of Abu Dhabi
 These two produced some memorable battles over their time as team mates...
-<img src="./Images/Image_2.png" alt="Memorable Battles">
+<img src="./Images/Image_2.png" style="width: 20%" alt=Memorable Battles">
 And in his own tongue-in-cheek manner, Ricciardo explained why a return to the Milton Keynes-based team could one day happen.
 “Something I’ve learned growing up in general just through life is never say never, and never completely disregard something – unless it was going to prison or something that you’d really not want to go back to,” he joked.
 What now for Hamilton, Vettel and co? How delaying 2021 rules will impact the driver market
 Yet, with the coronavirus pandemic having postponed the start of the 2020 season, Ricciardo said that there are no recent results for any potential suitors to judge him on, and no opportunity to talk to any other teams.
 “Never say never [but] it is hard having chats right now – because we haven’t had [races], we’re at a stalemate, nothing’s really happened.
 ...but, as in the case of the 2018 Azerbaijan Grand Prix, Ricciardo and Verstappen sometimes fought a little too hard.
-<img src="./Images/Image_1.png" alt="Memorable Battles">
+<img src="./Images/Image_1.png" style="width:20%" alt="Memorable Battles">
 “And normally chats start to come off the back of races, and results and momentum, so there’s honestly not much to talk about for now."
 Ricciardo’s future in Formula 1 will continue to be one of the sport’s most captivating stories as both Max Verstappen and Charles Leclerc have inked long-term deals with Red Bull and Ferrari, respectively.
 Hamilton and Ricciardo take control of the 2021 F1 driver market
@@ -233,15 +246,9 @@ So, which team do you think Ricciardo will be driving for next year?
 		<div>
 			www.formula1.race &nbsp;|&nbsp;  &copy; 2020
 		</div>
-		<!-- END FOOTER -->
-	</body>
-</html>
+        <!-- END FOOTER -->
+        	
+        <script src="./JS/one_page_website.js"></script>
 
-		
-						
-						
-					
-				
-				
-			
-				
+    </body>
+</html>
